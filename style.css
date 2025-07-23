@@ -88,6 +88,7 @@ button {
   font-family: "OpenSans";
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 img {
@@ -165,10 +166,6 @@ a {
 }
 a:hover .icon {
   color: #E9A923;
-}
-
-button {
-  font-family: "OpenSans";
 }
 
 .container {
@@ -369,7 +366,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 .tabs {
-  padding: 38px 0 16px;
+  padding: 38px 0 6px;
 }
 .tabs__row {
   display: flex;
@@ -431,7 +428,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   max-width: var(--max-width);
   height: 240px;
   position: relative;
-  margin: 0 auto -34px;
+  margin: 0 auto -22px;
   overflow: hidden;
 }
 .ticker__track {
@@ -615,7 +612,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-bottom: 23px;
   }
   .text-decoration-orange:before {
-    bottom: 4px;
+    bottom: 2px;
     height: 10px;
   }
   .ticker {
@@ -634,7 +631,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     min-width: 210px;
   }
   footer {
-    padding: 64px 16px 32px;
+    padding: 64px 16px 26px;
   }
   footer .logo {
     margin-bottom: 16px;
