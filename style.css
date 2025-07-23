@@ -200,7 +200,7 @@ button {
   transition: 0.3s;
 }
 .btn.btn_primary {
-  color: #fff;
+  color: #ffffff;
   background-color: #7F3A6A;
   border-color: #7F3A6A;
 }
@@ -252,9 +252,6 @@ button {
 .svg-sprite {
   display: none;
 }
-.svg-sprite path {
-  --inline-fill: #ffffff;
-}
 
 .markup-link {
   position: fixed;
@@ -262,7 +259,7 @@ button {
   left: 12px;
   text-decoration: none;
   background: #7F3A6A;
-  color: #fff;
+  color: #ffffff;
   border-radius: 50%;
   padding: 6px 11px;
   font-size: 14px;
@@ -293,7 +290,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .header__top {
   display: flex;
   align-items: flex-start;
-  padding-top: 24px;
+  padding-top: 25px;
 }
 .header__top .btn {
   margin-left: auto;
@@ -372,7 +369,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 .tabs {
-  padding: 38px 0 8px;
+  padding: 38px 0 6px;
 }
 .tabs__row {
   display: flex;
@@ -409,7 +406,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .tabs__content {
   max-width: 555px;
   width: 100%;
-  padding-top: 12px;
 }
 .tabs__title {
   margin-bottom: 28px;
@@ -433,26 +429,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .ticker {
   --max-width: 1920px;
   max-width: var(--max-width);
-  height: 238px;
+  height: 240px;
   position: relative;
-  margin: 0 auto -25px;
+  margin: 0 auto -22px;
   overflow: hidden;
 }
 .ticker__track {
   display: flex;
   position: absolute;
-  top: 50%;
-  left: -15px;
-  width: calc(100vw + 30px);
-  transform: rotate(-5deg) translateY(-50%);
+  top: 80px;
+  left: -25px;
+  max-width: calc(var(--max-width) + 50px);
+  transform: rotate(-5deg);
   background-color: #E9A923;
   user-select: none;
 }
 .ticker__track:last-child {
   background-color: #7F3A6A;
-  transform: rotate(5deg) translateY(-50%);
-  right: 0;
-  position: absolute;
+  transform: rotate(5deg);
+  right: -25px;
+  left: initial;
 }
 .ticker__track:last-child .ticker__item:nth-child(odd) {
   color: #7F3A6A;
@@ -514,13 +510,13 @@ footer {
   margin-top: auto;
 }
 footer .logo {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 footer .nav {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 footer .socials {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .socials__list {
@@ -533,6 +529,7 @@ footer .socials {
   text-align: center;
 }
 .contacts__title {
+  font-family: "Exo";
   font-size: 16px;
   margin-bottom: 12px;
   color: #313131;
@@ -606,7 +603,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding: 36px 0;
   }
   .tabs {
-    padding: 32px 0 0;
+    padding: 32px 0 36px;
   }
   .tabs__row {
     flex-direction: column;
@@ -621,11 +618,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
     bottom: 4px;
     height: 10px;
   }
+  .ticker {
+    height: 215px;
+  }
   .ticker__track {
-    transform: rotate(8deg) translateY(-50%);
+    transform: rotate(8deg);
+    top: 145px;
   }
   .ticker__track:last-child {
-    transform: rotate(-8deg) translateY(-50%);
+    transform: rotate(-8deg);
   }
   .ticker__item {
     font-size: 20px;
@@ -672,12 +673,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
   .ticker {
     height: 152px;
-    margin: 0 auto -8px;
+    margin: 0 auto;
   }
   .ticker__item {
     font-size: 16px;
     padding: 9px 12px;
     min-width: 158px;
+  }
+  footer {
+    background-color: #FDFBF9;
+  }
+  footer .socials {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ticker {
+    height: 125px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
