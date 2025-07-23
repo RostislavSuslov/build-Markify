@@ -369,7 +369,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 .tabs {
-  padding: 38px 0 6px;
+  padding: 38px 0 16px;
 }
 .tabs__row {
   display: flex;
@@ -431,7 +431,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   max-width: var(--max-width);
   height: 240px;
   position: relative;
-  margin: 0 auto -22px;
+  margin: 0 auto -34px;
   overflow: hidden;
 }
 .ticker__track {
